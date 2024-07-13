@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">	
+	
+<style type="text/css">
+	
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+header{
+	width: 100%;
+	height: 100vh;
+	
+}
+
+.insect{
+	width: 100%;
+	height: 19%;
+	background:rgb(0,0,0,0.90);
+	display: flex;
+	justify-content: space-between;
+	align-items:center ;
+	position:sticky;
+	
+
+}
+
+.insect img{
+       color: #fff;
+}
+
+nav{
+	float: right;
+	width: 30%;
+	height: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.insect a{
+
+	margin: 10px;
+	padding: 10px;
+	font-size: 35px;
+	text-transform: capitalize;
+	font-family: 'Italianno', cursive;
+       color: #fff;
+       border-radius: 20px;
+}
+
+.insect a:first-child{
+	color: #00b894;
+}
+
+.insect a:hover{
+	color: #fff;
+	background: #00b894;
+	transition: 0.15s;
+	font-size: 40px;
+}
+
+.insect1{
+	width: 100%;
+	height: 100%;
+	background-image: url(ant.jpg//);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+.insect1 nav{
+	width: 100%;
+	height: 100;
+	transform: translate(-1%,80%);
+	display: inline-block;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: 'Dancing Script', cursive;
+
+}
+
+h1{
+	font-size: 60px;
+	margin-bottom: 1px;
+	text-shadow: 2px 2px  #000 ;
+
+}
+
+h2{
+	font-size: 50px;
+	word-spacing: 5px;
+	text-shadow: 2px 2px #000;
+	margin-bottom: 10px;
+}
+
+p{
+	font-size: 40px;
+	text-shadow: 3px 3px #000;
+	margin-bottom: 55px;
+}
+
+
+.colorchange:after{
+	content: '';
+	animation: changecolor 180s infinite linear;
+	color: #00b894;
+	margin: 20px;
+
+
+}
+
+@keyframes changecolor{
+         0%{content:"Ant";}	
+         40%{content:"Mantis";}
+        60%{content:"Bees";}
+         80%{content:"Lizerd";}
+         100%{content:"Fly";}
+}
+
+.insect1 a{
+	padding: 5px 40px;
+	font-size: 20px;
+	border: 1px solid #fff ;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+.btnone:hover{
+    background: red;
+    transition: 0.15s;
+    font-size: 25px;
+}
+
+.btntwo:hover{
+	background: #00b894;
+	transition: 0.15s;
+	font-size: 25px;
+}
+
+.insect1{
+	animation: imagechange 180s infinite linear ;
+
+}
+
+@keyframes imagechange{
+	0%{background-image: url(ant.jpg);}
+	40%{background-image: url(mantis.jpg);}
+	70%{background-image: url(bees.jfif);}
+	80%{background-image: url(green%20lizard.jpg);}
+	100%{background-image: url(fly.jpg);}
+    
+}
+</style>
+
+
+</head>
+
+<body>
+<header>
+<div class="insect">	
+<img src="scorpian.png">
+<nav class="animate__animated animate__slideInDown">
+<a>home</a>
+<a>gallary</a>
+<a>more</a>
+</nav>
+
+</div>
+
+<span class="changeimage"><div class="insect1">
+	<nav>
+<h1>insect</h1>
+<h2><span class="colorchange">insects like</span></h2>
+<p>Insects are the largest group of animals on earth </p>
+<a class="btnone">sign in</a>
+<a class="btntwo">log in</a>
+</nav>
+</div></span>
+
+</body>
+</html>
